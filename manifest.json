@@ -1,6 +1,6 @@
 {
   "name": "Closure",
-  "description": "Require tab closure confirmation",
+  "description": "Require confirmation when closing a tab or navigating away from a site",
   "version": "0.1",
   "permissions": ["contextMenus", "activeTab"],
   "background": {

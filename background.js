@@ -1,7 +1,7 @@
 //Create context menu
 var parent = chrome.contextMenus.create(
 	{
-		title: "Confirm Tab Closure",
+		title: "Confirm Closure",
 		contexts: ["all"],
 		onclick: injectClosure
 	});
