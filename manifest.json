@@ -1,0 +1,10 @@
+{
+  "name": "Closure",
+  "description": "Require tab closure confirmation",
+  "version": "0.1",
+  "permissions": ["contextMenus", "activeTab"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}
