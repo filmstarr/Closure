@@ -6,12 +6,12 @@
 
     chrome.storage.sync.get(["showClosureAlert", "changeTabIcon"], function(items) {
         //Alert the user that confirmation is required to leave the site
-        if (items.showClosureAlert) {
+        if (items.showClosureAlert === undefined || items.showClosureAlert) {
             alert("Closure: confirmation now required to leave this site");
         }
 
         //Replace tab icon
-        if (items.changeTabIcon) {
+        if (items.changeTabIcon === undefined || items.changeTabIcon) {
             var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
             link.type = 'image/x-icon';
             link.rel = 'shortcut icon';
